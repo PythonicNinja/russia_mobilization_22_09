@@ -25,5 +25,7 @@ def get_source_df():
 
 df = get_source_df()
 
+print(f"\nparsed source df:\n{df}\n")
+
 age_distribution = df.age.value_counts()
-print(f"age_distribution {age_distribution}")
+print(f"\nage_distribution:\n{age_distribution}")
