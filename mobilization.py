@@ -23,9 +23,13 @@ def get_source_df():
     return df
 
 
-df = get_source_df()
+def main():
+    df = get_source_df()
+    print(f"\nparsed source df:\n{df}\n")
 
-print(f"\nparsed source df:\n{df}\n")
+    age_distribution = df.age.value_counts()
+    print(f"\nage_distribution:\n{age_distribution}")
 
-age_distribution = df.age.value_counts()
-print(f"\nage_distribution:\n{age_distribution}")
+
+if __name__ == '__main__':
+    main()
